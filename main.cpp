@@ -2,7 +2,6 @@
 
 class foo {
  private:
-  // CppCheck will find it
   int m_notInitialized;
 
  public:
