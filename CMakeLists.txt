@@ -12,5 +12,13 @@ add_custom_target(
         ${SOURCES} ${HEADERS}
 )
 
+add_custom_target(
+        clangformat
+        COMMAND /usr/bin/clang-format
+        -style=Google
+        -i
+        ${SOURCES} ${HEADERS}
+)
+
 
 add_executable(main ${SOURCES} ${HEADERS} README.md)
